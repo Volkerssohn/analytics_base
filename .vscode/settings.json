@@ -13,5 +13,20 @@
             "attached": true
         }
     ],
-    "duckdb.defaultDatabase": "volkerssohn_p"
+    "duckdb.defaultDatabase": "volkerssohn_p",
+    "sqltools.connections": [
+        {
+            "name": "volkerssohn_d",
+            "accessMode": "Read/Write",
+            "previewLimit": 50,
+            "driver": "DuckDB"
+        },
+        {
+            "name": "volkerssohn_p",
+            "accessMode": "Read/Write",
+            "previewLimit": 50,
+            "driver": "DuckDB"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
 }

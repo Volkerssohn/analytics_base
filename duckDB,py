@@ -2,19 +2,22 @@ import os
 import duckdb
 
 #os.makedirs("C:/data", exist_ok=True)          # create folder if missing
-con = duckdb.connect("volkerssohn_d.duckdb")
+#con = duckdb.connect("volkerssohn_d.duckdb")
 
 
 #con.sql("CREATE TABLE users (id INT, name VARCHAR)")
 #con.sql("INSERT INTO users VALUES (1, 'tobias')")
 #con.sql("SELECT * FROM users").show()
 
+#con.sql("ATTACH 'C:/data/volkerssohn_d.duckdb' AS volkerssohn_d")
+#con.sql("CREATE SCHEMA volkerssohn_d.tobias;")
+
+duckdb.connect(r'C:\Users\volkerssohn\data\volkerssohn_d.duckdb')
+duckdb.connect(r'C:\Users\volkerssohn\data\volkerssohn_p.duckdb')
+
 
 #con = duckdb.connect()                    # or connect("main.duckdb")
 #con.sql("ATTACH 'volkerssohn_p.duckdb' AS volkerssohn_p")
 #con.sql("CREATE TABLE volkerssohn_d.tobias.temp")
 #con.sql("CREATE TABLE volkerssohn_d.analytics")
-
-
-
 #con.close()
