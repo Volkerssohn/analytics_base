@@ -1,0 +1,17 @@
+{
+    "duckdb.databases": [
+        {
+            "alias": "volkerssohn_d",
+            "type": "file",
+            "path": "c:\\Users\\volkerssohn\\AppData\\Local\\Programs\\Microsoft VS Code\\volkerssohn_d.duckdb",
+            "attached": true
+        },
+        {
+            "alias": "volkerssohn_p",
+            "type": "file",
+            "path": "c:\\Users\\volkerssohn\\AppData\\Local\\Programs\\Microsoft VS Code\\volkerssohn_p.duckdb",
+            "attached": true
+        }
+    ],
+    "duckdb.defaultDatabase": "volkerssohn_p"
+}
